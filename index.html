@@ -1,32 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="sylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+        .alert-text {
+            color: red;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .home-link {
+            font-weight: bold;
+            color: blue;
+        }
+        .commi-link, .contact-link {
+            font-weight: bold;
+            color: green;
+        }
+        .resume-link {
+            font-weight: bold;
+            color: purple;
+        }
+        .shop-link {
+            font-weight: bold;
+            color: orange;
+        }
+        .recipes-link {
+            font-weight: bold;
+            color: brown;
+        }
+        #hello-text {
+            color: darkblue;
+        }
+        .hello-again {
+            color: darkgreen;
+            font-style: italic;
+        }
+        .subsection{
+            color: darkred;
+        }
+        h2 {
+            background:rgba(245, 224, 207, 0.637);
+            font-family: "Helvetica", sans-serif;
+            text-align: center;
+            padding: 10px;;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+    </style>
+
 </head>
 <body>
-    <h1>Hello World! This is my brand New Website!</h1>
-    <p>Here is a collective of my content for you to see.</p>
+    <h1 style="text-align: center;">Hello World! This is my brand New Website!</h1>
+    <p style="font-weight: bold; text-align: center;">
+        Here is a collective of my content for you to see.
+    </p>
         <h2>
-    <a href="./index.html" target="_self" rel="noopener noreferrer">
+    <a class="home-link" href="./index.html" target="_self" rel="noopener noreferrer">
         HOME*</a>
-    <a href="./comm.html" target="_self" rel="noopener noreferrer">
+    <a class="commi-link" href="./comm.html" target="_self" rel="noopener noreferrer">
         COMMI*</a>
-    <a href="./resum.html" target="_self" rel="noopener noreferrer">
+    <a class="resume-link" href="./resum.html" target="_self" rel="noopener noreferrer">
         RESUME*</a>
-    <a href="./shop.html" target="_self" rel="noopener noreferrer">
+    <a class="shop-link" href="./shop.html" target="_self" rel="noopener noreferrer">
         SHOP*</a>
-    <a href="./contact.html" target="_self" rel="noopener noreferrer">
+    <a class="contact-link" href="./contact.html" target="_self" rel="noopener noreferrer">
         CONTACT*</a>
-    <a href="./recipies/recipies.html" target="_self" rel="noopener noreferrer">
-        RECIPIES*</a>
+    <a class="recipes-link" href="./recipes/recipes.html" target="_self" rel="noopener noreferrer">
+        RECIPES*</a>
         </h2>
     <img src="./images/image-1-header.jpg" 
         alt="Header Image Placeholder"
-            height="400" width="620">
+            style="display:block; margin-left: auto; margin-right: auto;"
+                height= auto width= 700px>
+
+        <div id="hello-text">Hello, World!</div>
+        <div>
+            <div class="hello-again">Hello again!</div>
+        <p class="subsection">Hi...</p>
+        </div>
+        <div style="color: white; background: black;">Can anyone here me?</div>
+        <div class="alert-text">Please agree to our terms of service.</div>
+
     <img src="./images/image-2-body.jpg"
         alt="Body Image Placeholder"
-            height="840" width="620">
+            style="display:block; margin-left: auto; margin-right: auto;"
+                height= auto width= 700px>
 </body>
 </html>
